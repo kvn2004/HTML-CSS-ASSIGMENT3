@@ -1,12 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CASE01</title>
-    <link rel="stylesheet" href="./Assets/lib/normalize.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./Assets/lib/normalize.css" />
+    <style>
+      body > div:nth-child(1) {
+        position: absolute;
+        background-color: #1100ff;
+        top: 0;
+        left: 0;
+        height: 50vh;
+        width: 50vw;
+      }
+      body > div:nth-child(2) {
+        position: absolute;
+        background-color: #033a03;
+        top: 0;
+        right: 0;
+        height: 50vh;
+        width: 50vw;
+      }
+      body > div:nth-child(3) {
+        position: absolute;
+        background-color: yellow;
+        bottom: 0;
+        left: 0;
+        height: 50vh;
+        width: 50vw;
+      }
+      body > div:nth-child(4) {
+        position: absolute;
+        background-color: hotpink;
+        bottom: 0;
+        right: 0;
+        height: 50vh;
+        width: 50vw;
+      }
+
+      body > div:nth-child(5) {
+        position: absolute;
+        background-color: white;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+        width: 15vw;
+        aspect-ratio: 1/1;
+      }
+
+      body > div:nth-child(5) > div {
+        position: absolute;
+        background-color: red;
+        width: 8vw;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        top: 50%;
+        left: 50%;
+        translate: -50% -50%;
+      }
+      body > div:nth-child(6) {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: white;
+        width: 10vw;
+        aspect-ratio: 1/1;
+        border-bottom-right-radius: 100%;
+      }
+      body > div:nth-child(7) {
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: white;
+        width: 10vw;
+        aspect-ratio: 1/1;
+        border-bottom-left-radius: 100%;
+      }
+
+      body > div:nth-child(8) {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: white;
+        width: 10vw;
+        aspect-ratio: 1/1;
+        border-top-right-radius: 100%;
+      }
+      body > div:nth-child(9) {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        width: 10vw;
+        aspect-ratio: 1/1;
+        border-top-left-radius: 100%;
+      }
+
+      body > div:nth-child(1) > div {
+        background-color: white;
+        width: 10vw;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      body > div:nth-child(2) > div {
+        background-color: white;
+        width: 10vw;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      body > div:nth-child(3) > div {
+        background-color: white;
+        width: 10vw;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+      body > div:nth-child(4) > div {
+        background-color: #00ff15;
+        width: 10vw;
+        aspect-ratio: 1/1;
+        border-radius: 100%;
+        position: absolute;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+      }
+
+      body > div:nth-child(1) > div > div {
+        position: absolute;
+        background-color: red;
+        width: 5vw;
+        aspect-ratio: 1/1;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      body > div:nth-child(2) > div > div {
+        position: absolute;
+        background-color: red;
+        width: 5vw;
+        aspect-ratio: 1/1;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      body > div:nth-child(3) > div > div {
+        position: absolute;
+        background-color: red;
+        width: 5vw;
+        aspect-ratio: 1/1;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+      body > div:nth-child(4) > div > div {
+        position: absolute;
+        background-color: red;
+        width: 5vw;
+        aspect-ratio: 1/1;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+      }
+
+      body > div:nth-child(10) {
+        position: absolute;
+        top: 0;
+        right: 50%;
+        background-color: white;
+        width: 5vw;
+        border-bottom-left-radius: 100%;
+        aspect-ratio: 1/1;
+      }
+      body > div:nth-child(11) {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        background-color: white;
+        width: 5vw;
+        border-bottom-right-radius: 100%;
+        aspect-ratio: 1/1;
+      }
+      body > div:nth-child(12) {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        background-color: white;
+        width: 5vw;
+        border-top-right-radius: 100%;
+        aspect-ratio: 1/1;
+      }
+      body > div:nth-child(13) {
+        position: absolute;
+        bottom: 0;
+        right: 50%;
+        background-color: #00ff15;
+        width: 5vw;
+        border-top-left-radius: 100%;
+        aspect-ratio: 1/1;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div><div></div></div>
+    </div>
+    <div>
+      <div><div></div></div>
+    </div>
+    <div>
+      <div><div></div></div>
+    </div>
+    <div>
+      <div><div></div></div>
+    </div>
+
+    <div><div></div></div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </body>
 </html>
