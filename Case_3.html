@@ -1,12 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CASE03</title>
-    <link rel="stylesheet" href="./Assets/lib/normalize.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="./Assets/lib/normalize.css" />
+    <style>
+        body{
+            overflow-x: hidden;
+        }
+      .container {
+        width: 100vw;
+        height: 100vh;
+        
+      }
+      .fixed1 {
+        position: absolute;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 200px;
+        height: 200px;
+        background: transparent;
+        border: 10px solid red;
+        border-radius: 100%;
+        outline: 10px solid gray;
+        position: fixed;
+      }
+      .section {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      #sc1{
+        background-color: blueviolet;
+      }
+      #sc2{
+        background-color: rgb(226, 43, 208);
+      }
+      #sc3{
+        background-color: rgb(43, 131, 226);
+      }
+      .scroll-item {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: flex;
+        background-color: aqua;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: white;
+        margin: auto;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+       
+      }
+    </style>
+  </head>
+  <body>
+    <section class="section">
+      <div class="scroll-item" id="sc1">Hello</div>
+    </section>
+
+    <section class="section">
+      <div class="scroll-item" id="sc2">Welcome to</div>
+    </section>
+
+    <section class="section">
+      <div class="scroll-item" id="sc3">
+        Institute <br />
+        of <br />
+        Software <br />
+        Engineering
+      </div>
+    </section>
+    <div class="container">
+      <div class="fixed1"></div>
+    </div>
+  </body>
 </html>
